@@ -1,0 +1,26 @@
+@import 'nib'
+@import './mixins'
+
+button
+  shittyfont()
+  backdrop()
+
+  text-align: center
+  outline: none
+  padding: 4px
+  cursor: default
+
+  &:enabled
+    color: gray-darker;
+
+  &:disabled
+    color: #818181
+    text-shadow: 1px 1px white
+
+  &:active:enabled
+    // TODO: needs more accurate styles
+    box-shadow: 1px 1px 0 0 black inset
+    border-top-color: gray-dark
+    border-left-color: gray-dark
+    border-right-color: gray-lighter
+    border-bottom-color: gray-lighter
