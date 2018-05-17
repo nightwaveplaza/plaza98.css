@@ -4,36 +4,103 @@
 .window
   backdrop()
 
-  width: 400px
+  width: 497px
   cursor: default
 
   .content
-    padding: 7px 10px
+    padding: margin-base
+    margin: 0 1px
+    border: 1px solid gray-dark
+    border-right-color: white
+    border-bottom-color: white
+
+  >.inner
+    border: 1px solid white
+    border-right: 0 gray-dark
+    border-bottom: 0 gray-dark
 
   .header
     margin: 2px 2px 0
-    padding: 1px 2px
-    color: white;
+    padding: 2px
+    position: relative
+    // height: 20px
     background: linear-gradient(to right, blue-dark, blue-light)
     font-weight: bold
-    font-size: 11px
+    font-size: 12px
     line-height: 16px
+    color: white
 
     .icon
       width: 16px
       height: 16px
       float: left
       margin-right: 2px
+      background-size: cover
 
     .buttons
-      height: 14px
-      float: right
+      position: absolute
+      right: 4px
+      top: 2px
+      height: 16px
+      line-height: 0
 
       button
-        // TODO: fix centering
-        vertical-align: text-top
-        font-weight: bold
-        line-height: 12px
-        padding: 0
-        height: 14px
-        width: 14px
+        margin: 0
+        padding: 4px
+        height: 15px
+        width: 15px
+        line-height: 0
+        background-color: silver
+        background-size: 9px
+        background-repeat: no-repeat
+        background-position-x: 2px
+        background-position-y: 2px
+
+      .button-maximize
+        background-image: url('icons/maximize-icon.png')
+
+      .button-minimize
+        background-image: url('icons/minimize-icon.png')
+
+  .menu-bar
+    margin: 0 2px
+    line-height: 1
+    color: black
+    font-size: 0
+
+    .action
+      cursor: pointer
+      display: inline-block
+      font-size: 11px
+
+      a
+        display: block
+        padding: 5px 6px
+        color: black
+        text-decoration: none
+
+        &:hover
+          color: white
+
+      &:hover
+        background: #000084
+        color: white
+
+  .status-bar
+    padding: 1px 3px 1px 5px
+    font-size: 11px
+    line-height: 16px
+    border: 1px solid gray-dark
+    border-right-color: white
+    border-bottom-color: white
+    margin: 1px
+    position: relative
+
+    .status-bar-icon
+      background-image: url('icons/statusbar.png')
+      background-size: 12px
+      width: 12px
+      height: 16px
+      position: absolute
+      right: 0
+      bottom: 0

@@ -5,6 +5,7 @@ button
   shittyfont()
   backdrop()
 
+  margin: margin-base
   text-align: center
   outline: none
   padding: 4px
@@ -14,11 +15,10 @@ button
     color: gray-darker;
 
   &:disabled
-    color: #818181
+    color: gray-light
     text-shadow: 1px 1px white
 
   &:active:enabled
-    // TODO: needs more accurate styles
     box-shadow: 1px 1px 0 0 black inset
     border-top-color: gray-dark
     border-left-color: gray-dark

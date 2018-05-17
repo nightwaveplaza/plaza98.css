@@ -1,0 +1,34 @@
+hr
+  margin: 15px 0 15px 0
+  border-style: solid
+  border-color: #cccccc
+  border-width: 1px 0 0 0
+
+.block-centered
+  margin: 0 auto;
+
+.block {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+// margins
+margin_values = 3, 6, 9, 12, 15
+for i in (0..4)
+  .mt-{margin_values[i]}
+    margin-top: (margin_values[i])px !important
+
+  .mr-{margin_values[i]}
+    margin-right: (margin_values[i])px !important
+
+  .mb-{margin_values[i]}
+    margin-bottom: (margin_values[i])px !important
+
+  .ml-{margin_values[i]}
+    margin-left: (margin_values[i])px !important
+
+  .ma-{margin_values[i]}
+    margin: (margin_values[i])px !important
