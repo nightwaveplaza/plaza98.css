@@ -25,6 +25,7 @@ gulp.task('default', function(){
         .pipe(rename('plaza98.css'))
         .pipe(gulp.dest('dist'))
         .pipe(gulp.dest('demo'))
+        //.pipe(gulp.dest('D:\\Projects\\Dev\\Android\\NightwavePlaza\\view\\dist\\css'))
 
         // dist minified
         .pipe(rename('plaza98.min.css'))
