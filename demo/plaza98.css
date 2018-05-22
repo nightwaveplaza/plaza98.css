@@ -1,3 +1,32 @@
+a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  color: #0645ad;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: 0;
+}
+.progress-bar {
+  position: relative;
+  margin: 12px 5px 0 5px;
+  height: 20px;
+  overflow: hidden;
+}
+.progress-bar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+}
+.progress-bar .progress div {
+  display: inline-block;
+  margin: 1px;
+  height: 16px;
+  width: 10px;
+  background: #072269;
+}
 hr {
   margin: 15px 0 15px 0;
   border-style: solid;
@@ -16,19 +45,19 @@ hr {
   margin-right: 0 !important;
 }
 .mt-0 {
-  margin-top: 0 !important;
+  margin-top: 0px !important;
 }
 .mr-0 {
-  margin-right: 0 !important;
+  margin-right: 0px !important;
 }
 .mb-0 {
-  margin-bottom: 0 !important;
+  margin-bottom: 0px !important;
 }
 .ml-0 {
-  margin-left: 0 !important;
+  margin-left: 0px !important;
 }
 .ma-0 {
-  margin: 0 !important;
+  margin: 0px !important;
 }
 .mt-3 {
   margin-top: 3px !important;
@@ -89,21 +118,6 @@ hr {
 }
 .ma-12 {
   margin: 12px !important;
-}
-.mt-15 {
-  margin-top: 15px !important;
-}
-.mr-15 {
-  margin-right: 15px !important;
-}
-.mb-15 {
-  margin-bottom: 15px !important;
-}
-.ml-15 {
-  margin-left: 15px !important;
-}
-.ma-15 {
-  margin: 15px !important;
 }
 .ps__rail-y {
   opacity: 100;
