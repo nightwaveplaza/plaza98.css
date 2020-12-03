@@ -1,0 +1,46 @@
+@import "themes/elements";
+@import "mixins";
+
+button, .button {
+  @include font;
+  @include backdrop;
+
+  text-align: center;
+  outline: none !important;
+  padding: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration: none !important;
+  margin: 0;
+  color: inherit;
+
+  i {
+    cursor: pointer
+  }
+
+  &:enabled {
+    @include font-color('gray-darker');
+  }
+
+  &:disabled {
+    @include font-color('gray-light');
+    text-shadow: 1px 1px white;
+  }
+
+  &:active:enabled, .active {
+    box-shadow: 1px 1px 0 0 black inset;
+    @include border-color-tl('gray-dark');
+    @include border-color-rb('gray-lighter');
+  }
+}
+
+a.button {
+  padding: 4px 10px;
+}
+
+button.active {
+  box-shadow: 1px 1px 0 0 black inset;
+  @include border-color-tl('gray-dark');
+  @include border-color-rb('gray-lighter');
+}
