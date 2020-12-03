@@ -1,0 +1,18 @@
+@import "themes";
+
+/// Миксин Themify
+/// @access private
+/// @author Hugo Giraudel
+/// @param {String} $property - темизируемое свойство
+/// @param {String} $key - ключ цвета, используемого из темы
+/// @param {Map} $themes [$themes] - ассоциативный массив с темами
+@mixin themify($property, $key, $themes: $themes) {
+  // Проход по темам
+  @each $theme, $colors in $themes {
+    //&.theme-#{$theme},
+    .theme-#{$theme} & {
+      // Вывод декларации
+      #{$property}: map-get($colors, $key);
+    }
+  }
+}

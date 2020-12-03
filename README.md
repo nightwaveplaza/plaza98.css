@@ -4,4 +4,4 @@ Nightwave Plaza styles based on [contra's windows_98.css](https://github.com/con
 # Features
   * More accurate styles
   * Menu Bar
-  * Perfect Scrollbar support
+  * Written in SASS

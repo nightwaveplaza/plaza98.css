@@ -1,0 +1,116 @@
+@import "mixins";
+@import "themes/elements";
+
+.window {
+  @include backdrop;
+  width: 497px;
+  cursor: default;
+  margin: 0 auto;
+  @include font;
+
+  .content {
+    padding: $margin-base;
+    margin: 0 1px;
+    border: 1px solid;
+    @include border-color-tl('gray-dark');
+    @include border-color-rb('white');
+  }
+
+  >.inner {
+    position: relative;
+    border: 1px solid;
+    @include border-color-tl('white');
+    @include border-color-rb('gray-dark');
+  }
+
+  .header {
+    margin: 2px 2px 0;
+    padding: 2px;
+    position: relative;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    @include font-color('white');
+    @include background('header-gradient');
+
+    .icon {
+      width: 16px;
+      height: 16px;
+      float: left;
+      margin-right: 2px;
+      background-size: cover;
+    }
+
+    .buttons {
+      position: absolute;
+      right: 4px;
+      top: 2px;
+      height: 16px;
+      line-height: 0;
+
+      button {
+        margin: 0;
+        padding: 4px;
+        height: 15px;
+        width: 15px;
+        line-height: 0;
+        background-color: silver;
+        background-size: 9px;
+        background-repeat: no-repeat;
+        background-position-x: 2px;
+        background-position-y: 2px;
+      }
+
+      .button-maximize {
+        background-image: url('../icons/maximize-icon.png');
+      }
+
+      .button-minimize {
+        background-image: url('../icons/minimize-icon.png')
+      }
+    }
+  }
+
+  .menu-bar {
+    margin: 0 2px;
+    line-height: 1;
+    @include font-color('gray-darker');
+    font-size: 0;
+
+    .action {
+      cursor: pointer;
+      display: inline-block;
+      font-size: $font-size;
+
+      a {
+        display: block;
+        padding: 5px 6px;
+        @include font-color('gray-darker');
+        text-decoration: none;
+
+        &:hover {
+          @include font-color('white');
+        }
+
+        &:hover {
+          @include background-color('blue-dark');
+          @include font-color('white');
+        }
+
+        u {
+          cursor: pointer !important;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+}
