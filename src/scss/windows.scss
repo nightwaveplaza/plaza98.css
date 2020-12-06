@@ -24,7 +24,7 @@
   }
 
   .header {
-    margin: 2px 2px 0;
+    margin: 1px 1px 0;
     padding: 2px;
     position: relative;
     font-weight: bold;
@@ -72,7 +72,7 @@
   }
 
   .menu-bar {
-    margin: 0 2px;
+    margin: 0 1px;
     line-height: 1;
     @include font-color('gray-darker');
     font-size: 0;

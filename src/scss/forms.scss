@@ -2,11 +2,19 @@
 @import "themes/elements.scss";
 
 input {
-  padding: $margin-base;
+  line-height: 16px;
+  padding: 2px;
   border: 1px solid;
-  @include border-color-tl('black');
+  @include border-color-tl('gray-dark');
   @include border-color-rb('gray-lighter');
   @include box-shadow('input-boxshadow');
+
+  &:focus {
+    outline: 0;
+    border-style: dashed;
+    @include border-color-tl('gray-dark');
+    @include border-color-rb('gray-dark');
+  }
 }
 
 .text-field {
