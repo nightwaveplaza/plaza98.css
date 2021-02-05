@@ -1,4 +1,17 @@
-@import "themes";
+@import "theme-contrast";
+@import "theme-desert";
+@import "theme-standard";
+
+// Объединение карт
+@function map-collect($maps...) {
+  $collection: ();
+
+  @each $map in $maps {
+    $t: (map-get($map, 'name'): $map);
+    $collection: map-merge($collection, $t);
+  }
+  @return $collection;
+}
 
 /// Миксин Themify
 /// @access private
@@ -6,7 +19,7 @@
 /// @param {String} $property - темизируемое свойство
 /// @param {String} $key - ключ цвета, используемого из темы
 /// @param {Map} $themes [$themes] - ассоциативный массив с темами
-@mixin themify($property, $key, $themes: $themes) {
+@mixin themify($property, $key, $themes: map-collect($contrast, $desert, $standard)) {
   // Проход по темам
   @each $theme, $colors in $themes {
     //&.theme-#{$theme},

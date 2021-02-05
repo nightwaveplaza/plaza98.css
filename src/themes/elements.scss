@@ -13,14 +13,22 @@
   @include themify('border-color', $arguments...);
 }
 
-@mixin border-color-rb($arguments...) {
-  @include themify('border-right-color', $arguments...);
-  @include themify('border-bottom-color', $arguments...);
+@mixin border-color($arguments...) {
+  @include themify('border-color', $arguments...);
 }
 
 @mixin border-color-tl($arguments...) {
   @include themify('border-top-color', $arguments...);
   @include themify('border-left-color', $arguments...);
+}
+
+@mixin border-color-rb($arguments...) {
+  @include themify('border-right-color', $arguments...);
+  @include themify('border-bottom-color', $arguments...);
+}
+
+@mixin border-shadow($arguments...) {
+  @include themify('box-shadow', $arguments...);
 }
 
 @mixin border-color-left($arguments...) {
@@ -37,4 +45,8 @@
 
 @mixin background-color($arguments...) {
   @include themify('background-color', $arguments...);
+}
+
+@mixin background-image($arguments...) {
+  @include themify('background-image', $arguments...);
 }

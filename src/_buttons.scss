@@ -3,7 +3,7 @@
 
 button, .button {
   @include font;
-  @include backdrop;
+  @include d3-object;
 
   text-align: center;
   outline: none !important;
@@ -20,28 +20,18 @@ button, .button {
   }
 
   &:enabled {
-    @include font-color('gray-darker');
+    @include font-color('font-color');
   }
 
   &:disabled {
-    @include font-color('gray-light');
+    @include font-color('font-disabled');
     text-shadow: 1px 1px white;
   }
 
-  &:active:enabled, .active {
+  &:active:enabled, &.active {
     box-shadow: 1px 1px 0 0 black inset;
-    @include border-color-tl('gray-dark');
-    @include border-color-rb('gray-lighter');
+    @include border-shadow('btn-active-shadow');
+    @include border-color-tl('btn-active-border');
+    @include border-color-rb('btn-active-border');
   }
-}
-
-a.button {
-  padding: 4px 10px;
-  color: inherit !important;
-}
-
-button.active {
-  box-shadow: 1px 1px 0 0 black inset;
-  @include border-color-tl('gray-dark');
-  @include border-color-rb('gray-lighter');
 }
