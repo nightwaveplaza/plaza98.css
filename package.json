@@ -1,8 +1,8 @@
 {
-  "name": "plaza98.css",
+  "name": "plaza_98.css",
   "version": "3.0.0",
   "description": "Nightwave Plaza styles",
-  "repository": "https://fujicorp@bitbucket.org/fujicorp/plaza98.css.git",
+  "repository": "https://github.com/nightwaveplaza/plaza_98.css.git",
   "author": "Alexander Morozov",
   "license": "MIT",
   "scripts": {
