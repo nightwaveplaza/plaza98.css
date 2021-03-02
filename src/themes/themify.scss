@@ -1,6 +1,8 @@
 @import "theme-contrast";
 @import "theme-desert";
+@import "theme-rainy";
 @import "theme-standard";
+@import "theme-rose";
 
 // Объединение карт
 @function map-collect($maps...) {
@@ -19,7 +21,7 @@
 /// @param {String} $property - темизируемое свойство
 /// @param {String} $key - ключ цвета, используемого из темы
 /// @param {Map} $themes [$themes] - ассоциативный массив с темами
-@mixin themify($property, $key, $themes: map-collect($contrast, $desert, $standard)) {
+@mixin themify($property, $key, $themes: map-collect($contrast, $desert, $rainy, $rose, $standard)) {
   // Проход по темам
   @each $theme, $colors in $themes {
     //&.theme-#{$theme},

@@ -1,13 +1,13 @@
 {
   "name": "plaza98.css",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Nightwave Plaza styles",
   "repository": "https://github.com/nightwaveplaza/plaza98.css.git",
   "author": "Alexander Morozov",
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch"
+    "watch": "npm run build -- --watch"
   },
   "devDependencies": {
     "postcss": "8.1",
